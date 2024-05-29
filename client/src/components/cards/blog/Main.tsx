@@ -18,8 +18,8 @@ export interface typeCardMain {
 			images: { title: string; img: string }[] | null;
 		};
 		date: string;
-		views: number;
-		comments: number;
+		// views: number;
+		// comments: number;
 		link: string;
 	};
 }
@@ -34,12 +34,7 @@ export default function Main({ data }: typeCardMain) {
 						<div className={classes.overlay} />
 					</AspectRatio>
 				</Link>
-				<Text
-					lineClamp={2}
-					component={Link}
-					to={data.link}
-					className={classes.title}
-				>
+				<Text lineClamp={2} component={Link} to={data.link} className={classes.title}>
 					{data.title}
 				</Text>
 			</Stack>
@@ -54,12 +49,12 @@ export default function Main({ data }: typeCardMain) {
 						{data.date}
 					</Text>
 
-					<Group gap="xs">
+					{/* <Group gap="xs">
 						<Group align="center" gap={4}>
 							<IconEye
 								size="1rem"
 								stroke={1.5}
-								// color={"var(--mantine-color-dark-2)"}
+								color={"var(--mantine-color-dark-2)"}
 							/>
 							<Text inherit>{data.views}</Text>
 						</Group>
@@ -67,11 +62,11 @@ export default function Main({ data }: typeCardMain) {
 							<IconMessageCircle
 								size="1rem"
 								stroke={1.5}
-								// color={"var(--mantine-color-dark-2)"}
+								color={"var(--mantine-color-dark-2)"}
 							/>
 							<Text inherit>{data.comments}</Text>
 						</Group>
-					</Group>
+					</Group> */}
 				</Group>
 			</Stack>
 		</Box>
