@@ -42,6 +42,7 @@ export default function Contact() {
 		const formKey = {
 			info: "8R-8SX1GJXdg5jKcg",
 			training: "MbhWUntPHPMQK_IsL",
+			test: "Mog_FbhtxM3GYST6o",
 		};
 
 		switch (subject) {
