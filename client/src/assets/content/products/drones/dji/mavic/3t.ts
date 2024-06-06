@@ -2,7 +2,7 @@ const mavic3T = {
 	title: { long: "DJI Mavic 3T Enterprise", short: "Mavic 3T" },
 
 	specs: [
-		"4/3 CMOS wide camer",
+		"4/3 CMOS wide camera",
 		"56X hybrid zoom",
 		"Mechanical shutter",
 		"45-min max flight time",
@@ -11,7 +11,7 @@ const mavic3T = {
 	],
 
 	price: {
-		former: "942,000",
+		former: "951,400",
 		// latter: "930,000",
 		// change: "-0.2"
 	},

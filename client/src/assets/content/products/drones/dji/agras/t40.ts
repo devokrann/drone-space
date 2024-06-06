@@ -15,7 +15,7 @@ const t40 = {
 	],
 
 	price: {
-		former: "2,110,000",
+		former: "1,950,000",
 		// latter: "1,950,000",
 		// change: "-7.1"
 	},

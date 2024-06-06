@@ -12,22 +12,15 @@ export interface typeCardListing {
 		image: string;
 		title: string;
 		date: string;
-		views: number;
-		comments: number;
+		// views: number;
+		// comments: number;
 		link: string;
 	};
 }
 
 export default function Listing({ data }: typeCardListing) {
 	return (
-		<Card
-			p="lg"
-			shadow="lg"
-			className={classes.card}
-			radius="md"
-			component={Link}
-			to={data.link}
-		>
+		<Card p="lg" shadow="lg" className={classes.card} radius="md" component={Link} to={data.link}>
 			<div
 				className={classes.image}
 				style={{
@@ -55,12 +48,7 @@ export default function Listing({ data }: typeCardListing) {
 				}}
 			>
 				<Stack gap={"xs"}>
-					<Text
-						fz="lg"
-						className={classes.title}
-						fw={500}
-						lineClamp={2}
-					>
+					<Text fz="lg" className={classes.title} fw={500} lineClamp={2}>
 						{data.title}
 					</Text>
 
@@ -69,7 +57,7 @@ export default function Listing({ data }: typeCardListing) {
 							{data.date}
 						</Text>
 
-						<Group gap="lg" fz={"xs"}>
+						{/* <Group gap="lg" fz={"xs"}>
 							<Group align="center" gap={4}>
 								<IconEye
 									size="1rem"
@@ -86,7 +74,7 @@ export default function Listing({ data }: typeCardListing) {
 								/>
 								<Text inherit>{data.comments}</Text>
 							</Group>
-						</Group>
+						</Group> */}
 					</Group>
 				</Stack>
 			</Box>

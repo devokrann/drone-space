@@ -4,7 +4,7 @@ const m30t = {
 	specs: "The DJI Matrice 30T is a high-performance drone designed for professional applications. With its advanced flight capabilities and impressive payload capacity, this drone offers precise aerial data collection, mapping, and inspection solutions. It boasts exceptional stability, intelligent flight modes, and a reliable control system, making it an ideal choice for industrial and commercial operations.",
 
 	price: {
-		former: "1,960,000",
+		former: "1,650,000",
 		// latter: "1,755,000",
 		// change: "-10"
 	},

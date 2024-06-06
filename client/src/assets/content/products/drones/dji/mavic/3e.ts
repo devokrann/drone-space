@@ -11,7 +11,7 @@ const mavic3e = {
 	],
 
 	price: {
-		former: "809,000",
+		former: "690,000",
 		// latter: "746,000",
 		//  change: "-6.6"
 	},
