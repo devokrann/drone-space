@@ -1,21 +1,22 @@
 import image from "../../../../../images";
 
-const t40 = {
+const t50 = {
 	title: {
-		long: "DJI Agras T40 (Drone Spraying System)",
-		short: "Agras T40",
+		long: "DJI Agras T50 (Drone Spraying System)",
+		short: "Agras T50",
 	},
 
 	specs: [
-		"40L spraying payload",
-		"Active Phased Array Radar + Binocular Vision",
-		"Dual Atomized Spraying System",
-		"Supports flight spraying/spreading and RC mapping",
-		"Core Modules IPX6K",
+		"40 kg spraying payload",
+		"50 kg spreading payload",
+		"2 km O3 Transmission",
+		"Multidirectional Obstacle Avoidance (up to 50°)",
+		"Reverse Directional Spray During Flight",
+		"4-sprinkler spraying, flow rate 24 L/min",
 	],
 
 	price: {
-		former: "1,950,000",
+		former: "2,315,000",
 		// latter: "1,950,000",
 		// change: "-7.1"
 	},
@@ -101,4 +102,4 @@ const t40 = {
 	},
 };
 
-export default t40;
+export default t50;
