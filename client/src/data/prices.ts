@@ -99,18 +99,26 @@ const prices = [
 	// 	],
 	// },
 	{
-		price: "30 000",
+		price: "35 000",
 		title: "Radio Telephony",
-		desc: null,
+		desc: [
+			{ title: "Radio Telephony Exam", price: "2 000" },
+			{ title: "English Proficiency Exam", price: "3 000" },
+			{ title: "Radio Telephony License", price: "1 200" },
+		],
+	},
+	{
+		price: "110 000",
+		title: "Masterclass Program",
+		desc: [
+			{ title: "Drone Mapping & Survey", price: null },
+			{ title: "Photogammetry", price: null },
+			{ title: "LiDAR", price: null },
+		],
 	},
 	{
 		price: "200 000",
 		title: "Thermography",
-		desc: null,
-	},
-	{
-		price: "110 000",
-		title: "Drone Mapping",
 		desc: null,
 	},
 ];
