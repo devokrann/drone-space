@@ -10,7 +10,10 @@ import image from "@src/assets/images";
 
 import classes from "./Ad.module.scss";
 
-const data = [{ title: "Intakes", image: image.popups.intakes.yr2024.jun.portrait }];
+const data = [
+	{ title: "June Intake", image: image.popups.intakes.yr2024.jun.portrait },
+	{ title: "Radiotelephony", image: image.popups.courses.yr2024.jul.radiotelephony.portrait },
+];
 
 export default function Ad() {
 	const autoplay = useRef(Autoplay({ delay: 5000 }));
@@ -23,7 +26,8 @@ export default function Ad() {
 
 	return (
 		<Carousel
-			withIndicators
+			withIndicators={data.length > 1}
+			withControls={data.length > 1}
 			slideGap={"xs"}
 			loop
 			classNames={{ root: classes.root, control: classes.control }}
