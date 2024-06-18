@@ -11,14 +11,10 @@ import classes from "./Training.module.scss";
 export interface typeCardPricingTraining {
 	price: string;
 	title: string;
-	desc: { title: string; duration: string; price: number }[];
+	desc: { title: string; duration: string; price: number | null }[];
 }
 
-export default function Training({
-	price,
-	title,
-	desc,
-}: typeCardPricingTraining) {
+export default function Training({ price, title, desc }: typeCardPricingTraining) {
 	return (
 		<Stack align="stretch" gap={36} className={classes.card} h={"100%"}>
 			<Stack gap={"md"} w={"100%"}>
@@ -38,21 +34,10 @@ export default function Training({
 			<Stack justify="space-between" w={"100%"} h={"100%"}>
 				{desc && (
 					<Stack gap={"xs"} mb={"xl"}>
-						{desc.map((item) => (
-							<Grid
-								key={item.title}
-								columns={20}
-								align="center"
-								className={classes.grid}
-							>
-								<GridCol
-									span={{ base: 13, xs: 10, sm: 13, md: 10 }}
-								>
-									<Text
-										component="p"
-										my={0}
-										fz={{ base: "xs", xs: "sm" }}
-									>
+						{desc.map(item => (
+							<Grid key={item.title} columns={20} align="center" className={classes.grid}>
+								<GridCol span={{ base: 13, xs: 10, sm: 13, md: 10 }}>
+									<Text component="p" my={0} fz={{ base: "xs", xs: "sm" }}>
 										{item.title}
 									</Text>
 								</GridCol>
@@ -65,27 +50,13 @@ export default function Training({
 										md: "block",
 									}}
 								>
-									<Text
-										component="p"
-										my={0}
-										ta="center"
-										fz={{ base: "xs", xs: "sm" }}
-									>
+									<Text component="p" my={0} ta="center" fz={{ base: "xs", xs: "sm" }}>
 										{item.duration && item.duration}
 									</Text>
 								</GridCol>
-								<GridCol
-									span={{ base: 7, xs: 6, sm: 7, md: 6 }}
-								>
-									<Text
-										component="p"
-										my={0}
-										ta="end"
-										fz={{ base: "xs", xs: "sm" }}
-									>
-										{item.price
-											? `Ksh. ${item.price}`
-											: "Free"}
+								<GridCol span={{ base: 7, xs: 6, sm: 7, md: 6 }}>
+									<Text component="p" my={0} ta="end" fz={{ base: "xs", xs: "sm" }}>
+										{item.price == null ? "" : `Ksh. ${item.price}`}
 									</Text>
 								</GridCol>
 							</Grid>
