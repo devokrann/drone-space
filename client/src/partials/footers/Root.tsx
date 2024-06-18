@@ -12,6 +12,7 @@ import data from "@src/data";
 import content from "@src/assets/content";
 
 import classes from "./Root.module.scss";
+import { IconPointFilled } from "@tabler/icons-react";
 
 const linkGroups = [
 	{
@@ -85,10 +86,10 @@ const linkGroups = [
 				label: content.contact.phone.phone1,
 				link: `tel:${content.contact.phone.phone1}`,
 			},
-			{
-				label: content.contact.phone.phone2,
-				link: `tel:${content.contact.phone.phone2}`,
-			},
+			// {
+			// 	label: content.contact.phone.phone2,
+			// 	link: `tel:${content.contact.phone.phone2}`,
+			// },
 		],
 	},
 ];
@@ -177,20 +178,12 @@ export default function Root() {
 					fz={"xs"}
 				>
 					{/* <Group gap={"xs"} visibleFrom="xs">
-						{policy.map((item) => (
+						{policy.map(item => (
 							<React.Fragment key={item.link}>
-								<Text
-									component={Link}
-									to={item.link}
-									className={classes.link}
-									inherit
-									ta={"end"}
-								>
+								<Text component={Link} to={item.link} className={classes.link} inherit ta={"end"}>
 									{item.label}
 								</Text>
-								{policy.indexOf(item) < policy.length - 1 && (
-									<IconPointFilled size={8} />
-								)}
+								{policy.indexOf(item) < policy.length - 1 && <IconPointFilled size={8} />}
 							</React.Fragment>
 						))}
 					</Group> */}

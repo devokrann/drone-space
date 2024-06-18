@@ -49,10 +49,10 @@ const links = {
 					link: `mailto:${content.contact.email.info}`,
 					label: content.contact.email.info,
 				},
-				{
-					link: `mailto:${content.contact.email.training}`,
-					label: content.contact.email.training,
-				},
+				// {
+				// 	link: `mailto:${content.contact.email.training}`,
+				// 	label: content.contact.email.training,
+				// },
 			],
 		},
 		{
@@ -73,10 +73,10 @@ const links = {
 					link: `tel:${content.contact.phone.phone1}`,
 					label: content.contact.phone.phone1,
 				},
-				{
-					link: `tel:${content.contact.phone.phone2}`,
-					label: content.contact.phone.phone2,
-				},
+				// {
+				// 	link: `tel:${content.contact.phone.phone2}`,
+				// 	label: content.contact.phone.phone2,
+				// },
 			],
 		},
 	],

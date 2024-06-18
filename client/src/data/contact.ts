@@ -1,9 +1,4 @@
-import {
-	IconMail,
-	IconMapPin,
-	IconPhone,
-	IconClock,
-} from "@tabler/icons-react";
+import { IconMail, IconMapPin, IconPhone, IconClock } from "@tabler/icons-react";
 
 import content from "../assets/content";
 
@@ -30,10 +25,10 @@ const contact = {
 				link: `tel:${content.contact.phone.phone1}`,
 				label: content.contact.phone.phone1,
 			},
-			{
-				link: `tel:${content.contact.phone.phone2}`,
-				label: content.contact.phone.phone2,
-			},
+			// {
+			// 	link: `tel:${content.contact.phone.phone2}`,
+			// 	label: content.contact.phone.phone2,
+			// },
 		],
 	},
 	map: {
