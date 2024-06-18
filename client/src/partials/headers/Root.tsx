@@ -26,11 +26,11 @@ const data = {
 			link: `tel:${content.contact.phone.phone1}`,
 			label: content.contact.phone.phone1,
 		},
-		{
-			icon: IconPhone,
-			link: `tel:${content.contact.phone.phone2}`,
-			label: content.contact.phone.phone2,
-		},
+		// {
+		// 	icon: IconPhone,
+		// 	link: `tel:${content.contact.phone.phone2}`,
+		// 	label: content.contact.phone.phone2,
+		// },
 	],
 
 	social: [
