@@ -9,7 +9,7 @@ const contact = {
 	},
 	social: {
 		twitter: "https://twitter.com/DroneSpaceKenya",
-		facebook: "https://www.facebook.com/people/Drone-Space-Training/100064813848635/",
+		facebook: "https://www.facebook.com/profile.php?id=100079898846715&mibextid=kFxxJD",
 		instagram: "https://www.instagram.com/dronespacekenya/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
 		linkedIn: "https://www.linkedin.com/company/drone-space-kenya-limited/",
 	},
