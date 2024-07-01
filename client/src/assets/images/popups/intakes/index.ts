@@ -3,6 +3,7 @@ import intake2402P from "./feb-2024-intake-portrait.jpg";
 import intake2404P from "./apr-2024-intake-portrait.webp";
 import intake2405P from "./may-2024-intake-portrait.webp";
 import intake2406P from "./jun-2024-intake-portrait.webp";
+import intake2407P from "./jul-2024-intake-portrait.webp";
 
 const intakes = {
 	yr2024: {
@@ -11,6 +12,7 @@ const intakes = {
 		apr: { landscape: null, portrait: intake2404P },
 		may: { landscape: null, portrait: intake2405P },
 		jun: { landscape: null, portrait: intake2406P },
+		jul: { landscape: null, portrait: intake2407P },
 	},
 };
 

@@ -11,7 +11,7 @@ import image from "@src/assets/images";
 import classes from "./Ad.module.scss";
 
 const data = [
-	{ title: "June Intake", image: image.popups.intakes.yr2024.jun.portrait },
+	{ title: "June Intake", image: image.popups.intakes.yr2024.jul.portrait },
 	{ title: "Radiotelephony", image: image.popups.courses.yr2024.jul.radiotelephony.portrait },
 ];
 
