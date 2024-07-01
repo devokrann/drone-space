@@ -1,19 +1,17 @@
 import React from "react";
 
-import { Modal, Button, Image } from "@mantine/core";
+import { Modal, Button } from "@mantine/core";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
 import { IconCertificate } from "@tabler/icons-react";
 
 import carousel from "../carousels";
 
-import image from "../../assets/images";
-
 import classes from "./Ad.module.scss";
 
 export default function Advertisment({ active }: { active: boolean }) {
 	const [opened, { open, close }] = useDisclosure(active);
-	const mobile = useMediaQuery("(max-width: 36em)");
+	// const mobile = useMediaQuery("(max-width: 36em)");
 
 	const xl = useMediaQuery("(min-width: 88em)");
 
