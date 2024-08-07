@@ -11,6 +11,7 @@ import contact from "@/data/contact";
 import AffixTop from "@/components/affixi/Top";
 import AffixNavbar from "@/components/affixi/Navbar";
 import AffixAssistant from "@/components/affixi/Assistant";
+import AffixWhatsapp from "@/components/affixi/Whatsapp";
 
 export const metadata: Metadata = {
 	title: { default: `Drone Space`, template: `%s - ${contact.name.company}` },
@@ -28,6 +29,7 @@ export default function Marketing({
 				<AffixTop />
 				<AffixNavbar />
 				<AffixAssistant />
+				<AffixWhatsapp />
 			</main>
 		</LayoutBody>
 	);

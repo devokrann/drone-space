@@ -9,6 +9,7 @@ import FooterMain from "@/partials/footers/Main";
 import AffixTop from "@/components/affixi/Top";
 import AffixNavbar from "@/components/affixi/Navbar";
 import AffixAssistant from "@/components/affixi/Assistant";
+import AffixWhatsapp from "@/components/affixi/Whatsapp";
 
 import contact from "@/data/contact";
 
@@ -28,6 +29,7 @@ export default function ShopLayout({
 				<AffixTop />
 				<AffixNavbar />
 				<AffixAssistant />
+				<AffixWhatsapp />
 			</main>
 		</LayoutBody>
 	);
