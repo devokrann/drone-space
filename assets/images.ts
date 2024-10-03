@@ -640,7 +640,11 @@ const images = {
 		mappSur: "/images/services/image-6.webp",
 	},
 
-	team: { kevon: "/images/team/image-1.webp" },
+	team: {
+		kevon: "/images/team/image-1.webp",
+		priscah: "/images/team/image-2.webp",
+		hannah: "/images/team/image-3.webp",
+	},
 
 	training: {
 		fixWin: "/images/training/image-1.webp",
