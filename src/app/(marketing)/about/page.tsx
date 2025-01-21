@@ -41,7 +41,7 @@ export default async function About() {
 
   return (
     <LayoutPage>
-      <LayoutSection id="our-story" padded bg={'var(--mantine-color-gray-1)'}>
+      <LayoutSection id="our-story" padded>
         <Grid gutter={{ base: 'xl', md: 48 }}>
           <GridCol span={{ base: 12, md: 6 }} visibleFrom="sm">
             <AspectRatio ratio={1920 / 1080} h={'100%'}>
@@ -207,7 +207,7 @@ export default async function About() {
         </Stack>
       </LayoutSection>
 
-      <LayoutSection id="team" padded>
+      <LayoutSection id="team" padded bg={'var(--mantine-color-gray-1)'}>
         <IntroSection
           props={{
             subTitle: 'Our Team',
@@ -226,14 +226,23 @@ export default async function About() {
                 </GridCol>
               )
           )}
+
+          <GridCol span={12}>
+            <Divider my={SECTION_SPACING / 2} label={'Advisory Board'} />
+          </GridCol>
+
+          {team.map(
+            (item, index) =>
+              item.type == 'BOARD' && (
+                <GridCol key={index} span={{ base: 12, xs: 6, md: 4, lg: 3 }}>
+                  <CardTeamMain data={item} />
+                </GridCol>
+              )
+          )}
         </Grid>
       </LayoutSection>
 
-      <LayoutSection
-        id="spaces-and-hub"
-        padded
-        bg={'var(--mantine-color-gray-1)'}
-      >
+      <LayoutSection id="spaces-and-hub" padded>
         <IntroSection
           props={{
             subTitle: 'Spaces & Hub',
@@ -249,10 +258,7 @@ export default async function About() {
       <LayoutSection
         id="about-testimonials"
         padded
-        bg={
-          'light-dark(var(--mantine-color-pri-light),var(--mantine-color-pri-light))'
-        }
-        // c={'light-dark(var(--mantine-color-white),var(--mantine-color-white))'}
+        bg={'var(--mantine-color-gray-1)'}
       >
         <Stack gap={'xl'}>
           <IntroSection
